@@ -1,8 +1,3 @@
-#Everything Is perfect in this code.
-#Left Click,Right Click, Screenshot, Cursor Movement, Volume Up and Down.
-#Alignment of Text using CSS is also perfect.
-#List is also perfect in html code.
-
 import os   
 from flask import Flask, render_template, Response
 import cv2

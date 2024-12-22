@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mouse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <header>
+        <h1>Virtual Mouse Controller</h1>
+    </header>
+    <main>
+        <div class="camera-container">
+            <h2>Live Camera Feed</h2>
+            <div class="video-wrapper">
+                <img id="videoStream" src="/video_feed" alt="Camera Feed">
+            </div>
+        </div>
+        <div class="actions">
+            <h2>Gesture Actions</h2>
+            <ol start="1">
+                <li><strong>Move Mouse:</strong> Point with Index Finger And Middle Finger</li>
+                <li><strong>Left Click:</strong> Pinch Thumb And Index Finger</li>
+                <li><strong>Right Click:</strong> Pinch Thumb And Middle Finger</li>
+                <li><strong>Screenshot:</strong> Pinch Index Finger And Thumb, Fist Closed</li>
+                <li><strong>Volume:</strong> Closed Fist, Thumb Out Pointing Left
+                    <ol type="i">
+                      <li><strong>Increase Volume:</strong> Move Fist Up</li>
+                      <li><strong>Decrease Volume:</strong> Move Fist Down</li>
+                    </ol>
+                  </li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by <a href="#" target="_blank">Harsh Soni, Harshit Patel, Sajal Shrivastava</a></p>
+    </footer>
+</body>
+</html>
